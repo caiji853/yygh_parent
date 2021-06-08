@@ -163,6 +163,7 @@ public class HttpClient {
                     SSLContext sslContext = new SSLContextBuilder()
                             .loadTrustMaterial(null, new TrustStrategy() {
                                 // 信任所有
+                                @Override
                                 public boolean isTrusted(X509Certificate[] chain,
                                                          String authType)
                                         throws CertificateException {

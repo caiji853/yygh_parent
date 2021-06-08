@@ -24,4 +24,5 @@ public class DepartmentController {
         List<DepartmentVo> list = departmentService.findDeptTree(hoscode);
         return Result.ok(list);
     }
+
 }
